@@ -2,7 +2,7 @@ ThreadFix is a software vulnerability aggregation and management system that hel
 
 1. Build the image: `docker build . -t threadfix/web`
 2. Start Container: `docker run -d -p 8443:8443 threadfix/web start`
-3. Watch the logs and wait for startup: `docker logs `container_id`
+3. Watch the logs and wait for startup: `docker logs <container_id>`
 3. Threadfix should now available on your local machine `https://127.0.0.1:8443/threadfix/`
 
 This image should be used for testing purposes only. All data will be lost once the container is killed. 
