@@ -2,8 +2,9 @@ FROM ubuntu:trusty
 MAINTAINER Jimmy Mesta <@jimmesta>
 
 RUN apt-get update && apt-get install -y openjdk-7-jdk wget
-RUN mkdir Threadfix && mkdir Threadfix/tomcat/webapps
+RUN mkdir Threadfix 
 COPY Install /Threadfix
+RUN mkdir 
 WORKDIR /Threadfix/tomcat/webapps
 RUN wget https://storage.googleapis.com/threadfix/threadfix.war
 EXPOSE 8443
