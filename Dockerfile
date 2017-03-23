@@ -9,4 +9,4 @@ RUN wget https://storage.googleapis.com/threadfix/threadfix.war
 EXPOSE 8443
 WORKDIR /Threadfix
 RUN chmod +x threadfix.sh
-ENTRYPOINT ["./threadfix.sh"]
+ENTRYPOINT ["./threadfix.sh start"]
